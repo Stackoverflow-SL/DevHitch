@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DevHitch"
+    }
+  },
+  "defaultProject": "DevHitch",
+  "cli": {
+    "analytics": "6d9caa45-76bb-452e-8ae5-a9a1f724237a"
+  }
 }
