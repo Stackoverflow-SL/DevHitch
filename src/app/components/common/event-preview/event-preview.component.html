@@ -1,0 +1,16 @@
+<div class="event">
+    <img src="{{ event.image }}" alt="{{ event.title }}" class="w-100 rounded-lg">
+    <div class="mt-3 color-brown text-uppercase">
+        <strong>{{ event.dateTime }}</strong>  
+    </div>
+    <div>
+        {{ event.title }}
+    </div>
+    <div class="text-muted text-weight-light mt-3 font-14">
+        {{ event.organizer }}
+    </div>
+    <div class="tag-tray">
+        <label class="tag tag-pink edge-lg">{{ event.type }}</label>
+        <label class="tag tag-yellow edge-lg">{{ event.participants }} Participating</label>
+    </div>
+</div>
