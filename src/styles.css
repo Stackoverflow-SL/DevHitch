@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.edge-lg {
+    border-radius: 120px;
+}
+
+.color-brown {
+    color: #695419;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.tag-tray .tag:not(:first-child){
+    margin-left: 5px;
+}
+
+.tag {
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.tag-pink {
+    background-color: #ff6a59;
+    color:#fff;
+}
+
+.tag-yellow {
+    background-color: #ffc107;
+    color:#000;
+}
