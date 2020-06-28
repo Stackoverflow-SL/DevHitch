@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/common/nav/nav.component';
 import { FooterComponent } from './components/common/footer/footer.component';
-import { FeaturedEventsComponent } from './components/home/featured-events/featured-events.component';
+import { EventPreviewComponent } from './components/common/event-preview/event-preview.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +14,11 @@ import { FeaturedEventsComponent } from './components/home/featured-events/featu
     HomeComponent,
     NavComponent,
     FooterComponent,
-    FeaturedEventsComponent
+    EventPreviewComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,25 +1,34 @@
-<div>
-  <div class="container">
-    <div class="row">
-      <div class="col-6">
-        <h1 class="heading-text">
-          Discover events for all the things you love
-        </h1>
+<!-- Welcome Section -->
+<section>
+  <div class="row py-5">
+    <div class="col-sm-6 my-5">
+      <h1>
+        Discover events for all the things you love!
+      </h1>
+      <button class="btn btn-primary btn-lg mt-5 edge-lg px-5">Join DevHitch</button>
+    </div>
+    <div class="col-sm-6">
+      <img
+        class="heading-vector w-100"
+        src="../../../assets/images/home2.png"
+        alt="Hi to DevHitch"
+      />
+    </div>
+  </div>
+</section>
 
-        <button class="btn btn-primary btn-lg mt-3">Join DevHitch</button>
-      </div>
-
-      <div class="col-6">
-        <img
-          class="heading-vector"
-          src="../../../assets/images/home.png"
-          alt="Hi to DevHitch"
-          width="140%"
-        />
+<!-- Upcoming events section -->
+<section>
+  <div class="row py-5">
+    <div class="col-sm-12">
+      <h2>Upcomming Events</h2>
+    </div>
+    <div class="col-sm-12">
+      <div class="row mt-4">
+        <div class="col-sm-3" *ngFor="let data of tempEvents">
+          <app-event-preview [event]="data"></app-event-preview>
+        </div>
       </div>
     </div>
   </div>
-
-  <!-- Featured Events -->
-  <app-featured-events></app-featured-events>
-</div>
+</section>
