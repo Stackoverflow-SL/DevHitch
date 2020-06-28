@@ -2,3 +2,15 @@
     color: whitesmoke;
     height: 300px;
 }
+
+a{
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+.footer-col {
+    color: white;
+}
