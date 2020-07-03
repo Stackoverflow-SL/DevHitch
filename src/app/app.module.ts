@@ -9,6 +9,7 @@ import { FooterComponent } from './components/common/footer/footer.component';
 import { EventPreviewComponent } from './components/common/event-preview/event-preview.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SignupComponent } from './components/signup/signup.component';
     EventPreviewComponent,
     LoginComponent,
     SignupComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
