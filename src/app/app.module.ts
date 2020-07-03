@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/common/nav/nav.component';
 import { FooterComponent } from './components/common/footer/footer.component';
 import { EventPreviewComponent } from './components/common/event-preview/event-preview.component';
+import { LoginComponent } from './components/common/login/login.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { EventPreviewComponent } from './components/common/event-preview/event-p
     NavComponent,
     FooterComponent,
     EventPreviewComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
