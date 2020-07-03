@@ -1,0 +1,11 @@
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.login-form {
+    padding-top: 20%;
+}
