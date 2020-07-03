@@ -10,6 +10,7 @@ export class HomeComponent implements OnInit {
   constructor() {
     this.tempEvents = [
       new Event(
+        '1',
         'GoLang Sri Lanka - June',
         'Mon, Jun 29, 4:50 PM',
         'https://secure-content.meetupstatic.com/images/classic-events/491000108/375x210.jpg',
@@ -18,6 +19,7 @@ export class HomeComponent implements OnInit {
         'Online'
       ),
       new Event(
+        '2',
         'Power BI Community: #002',
         'Tue, Jun 30, 5:00 PM',
         'https://secure-content.meetupstatic.com/images/classic-events/491024724/500x280.jpg',
@@ -27,6 +29,7 @@ export class HomeComponent implements OnInit {
       ),
 
       new Event(
+        '3',
         'Flutter Layout`s Design Secrets',
         'Tue, Jun 30, 5:00 PM',
         'https://secure-content.meetupstatic.com/images/classic-events/490906389/500x280.jpg',
@@ -35,6 +38,7 @@ export class HomeComponent implements OnInit {
         'Online'
       ),
       new Event(
+        '4',
         'Scaffolding for a React Application',
         'Tue, Jun 30, 5:00 PM',
         'https://secure-content.meetupstatic.com/images/classic-events/490705895/500x280.jpg',

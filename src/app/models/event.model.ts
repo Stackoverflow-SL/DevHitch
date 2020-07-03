@@ -1,4 +1,5 @@
 export class Event {
+  id: String;
   title: String;
   dateTime: String;
   image: String;
@@ -7,6 +8,7 @@ export class Event {
   type: String;
 
   constructor(
+    id: String,
     title: String,
     dateTime: String,
     image: String,
@@ -14,6 +16,7 @@ export class Event {
     participantsCount: Number,
     type: String
   ) {
+    this.id = id;
     this.title = title;
     this.dateTime = dateTime;
     this.image = image;
