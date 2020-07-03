@@ -1,3 +1,66 @@
-<div class="container profile-section">
-  <p>{{ user.id }}</p>
+<div>
+  <div
+    class="profile-cover"
+    style="
+      background-image: url(https://about.twitter.com/content/dam/about-twitter/company/brand-resources/en_us/OTB_Company_Blue.png.img.fullhd.medium.png);
+    "
+  >
+    <div class="container profile-section">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-3">
+          <div class="container profile-container center">
+            <img
+              src="{{ user.image }}"
+              width="150px"
+              height="150px"
+              style="border-radius: 50%;"
+            />
+
+            <h6>{{ user.name }}</h6>
+            <p>Platformer</p>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="container profile-container">
+            <form style="padding-top: 5%;">
+              <h4>Profile</h4>
+              <div class="row">
+                <div class="col-sm">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      aria-describedby="emailHelp"
+                      value="{{ user.name }}"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email address</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      value="{{ user.email }}"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-primary">Update</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="width: 100%; height: 400px;"></div>
 </div>
