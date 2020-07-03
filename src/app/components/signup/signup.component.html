@@ -1,14 +1,25 @@
-<div class="row" style="height: 70vh;">
+<div class="row" style="height: 80vh;">
   <div class="col-7">
     <img
       class="heading-vector w-100"
       src="../../../assets/images/signin.png"
-      alt="Sign In to DevHitch"
+      alt="Sign Up to DevHitch"
     />
   </div>
   <div class="col-5">
-   
     <form class="login-form">
+      <div class="form-title">
+        <h3>Signup to DevHitch</h3>
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          aria-describedby="name"
+        />
+      </div>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
         <input
@@ -29,24 +40,24 @@
           id="exampleInputPassword1"
         />
       </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
+
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
     <hr />
 
     <div class="btn-group-vertical" style="width: 100%;">
-      <button type="button" class="btn btn-secondary">
+      <button type="button" class="btn btn-outline-dark">
         Log in with Google
+        <img src="https://img.icons8.com/color/25/000000/google-logo.png" />
       </button>
-      <button type="button" class="btn btn-secondary">
+      <button type="button" class="btn btn-outline-dark">
         Log in with Facebook
+        <img src="https://img.icons8.com/fluent/25/000000/facebook-new.png" />
       </button>
-      <button type="button" class="btn btn-secondary">
+      <button type="button" class="btn btn-outline-dark">
         Log in with Apple
+        <img src="https://img.icons8.com/ios-filled/25/000000/mac-os.png" />
       </button>
     </div>
   </div>
