@@ -4,22 +4,25 @@ export class User {
   name: String;
   email: String;
   image: String;
-  type: String;
+  location: String;
   joinedGroups: Group[];
+  bio: String;
 
   constructor(
     id: String,
     name: String,
     email: String,
     image: String,
-    type: String,
-    joinedGroups: Group[]
+    location: String,
+    joinedGroups: Group[],
+    bio: String
   ) {
     this.id = id;
     this.name = name;
     this.email = email;
     this.image = image;
-    this.type = type;
+    this.location = location;
     this.joinedGroups = joinedGroups;
+    this.bio = bio;
   }
 }

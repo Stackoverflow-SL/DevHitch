@@ -52,9 +52,38 @@
                     />
                   </div>
                 </div>
+
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="mb-3">
+                      <label for="location" class="form-label">Location</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="location"
+                        aria-describedby="location"
+                        value="{{ user.name }}"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-sm">
+                    <div class="mb-3">
+                      <label for="bio" class="form-label">Bio</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="bio"
+                        aria-describedby="bio"
+                        value="{{ user.bio }}"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <button class="btn btn-primary">Update</button>
+              <button class="btn btn-primary">Update Profile</button>
+              <hr />
               <button class="btn btn-secondary ml-2">Change Password</button>
               <button class="btn btn-danger ml-2">Delete Account</button>
             </form>
