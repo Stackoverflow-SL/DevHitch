@@ -15,7 +15,8 @@ export class ProfileComponent implements OnInit {
       'Chamod Perera',
       'hcsperera@gmail.com',
       'https://avatars1.githubusercontent.com/u/19349315?s=460&u=0c5e235d9529fccdbfb37a31ed69655a6cd8dbb0&v=4',
-      'organizer'
+      'organizer',
+      null
     );
   }
 
