@@ -10,6 +10,7 @@ import { EventPreviewComponent } from './components/common/event-preview/event-p
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { NewGroupComponent } from './components/new-group/new-group.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     LoginComponent,
     SignupComponent,
     ProfileComponent,
+    NewGroupComponent,
   ],
   imports: [
     BrowserModule,
