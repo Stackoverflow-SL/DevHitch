@@ -13,17 +13,16 @@
     <div><h5>My Groups</h5></div>
 
     <!-- If My groups available -->
-    <div *ngIf="isMyGroupsAvailable">
+    <ng-container *ngIf="isMyGroupsAvailable; else second">
       <div class="container" *ngFor="let group of groups">
         <app-group-item [group]="group"></app-group-item>
       </div>
-    </div>
+    </ng-container>
 
-    <!-- If no my groups available -->
-    <div *ngIf="!isMyGroupsAvailable">
+    <ng-template #second>
       <div class="alert alert-dark" role="alert">
         You haven't joined to any group.
       </div>
-    </div>
+    </ng-template>
   </div>
 </div>
