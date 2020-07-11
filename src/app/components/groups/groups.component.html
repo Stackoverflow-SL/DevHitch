@@ -9,5 +9,21 @@
     </button>
   </div>
 
-  <div class="groups-container"></div>
+  <div class="groups-container">
+    <div><h5>My Groups</h5></div>
+
+    <!-- If My groups available -->
+    <div *ngIf="isMyGroupsAvailable">
+      <div class="container" *ngFor="let group of groups">
+        <app-group-item [group]="group"></app-group-item>
+      </div>
+    </div>
+
+    <!-- If no my groups available -->
+    <div *ngIf="!isMyGroupsAvailable">
+      <div class="alert alert-dark" role="alert">
+        You haven't joined to any group.
+      </div>
+    </div>
+  </div>
 </div>
