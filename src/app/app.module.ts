@@ -11,6 +11,8 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { NewGroupComponent } from './components/new-group/new-group.component';
+import { GroupsComponent } from './components/groups/groups.component';
+import { EventsComponent } from './components/events/events.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { NewGroupComponent } from './components/new-group/new-group.component';
     SignupComponent,
     ProfileComponent,
     NewGroupComponent,
+    GroupsComponent,
+    EventsComponent,
   ],
   imports: [
     BrowserModule,
