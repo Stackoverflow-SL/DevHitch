@@ -27,7 +27,7 @@
 
       <div class="container" *ngFor="let topic of topics">
         <span class="badge rounded-pill bg-primary" style="float: left;">{{
-          topic.name
+          topic?.name
         }}</span>
       </div>
     </div>
