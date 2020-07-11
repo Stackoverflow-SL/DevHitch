@@ -1,0 +1,35 @@
+<div class="container" style="height: 600px;">
+  <div class="title">
+    <h2>Create a New DevHitch Group</h2>
+
+    <h3 class="mt-3">Set Your Group Location First</h3>
+    <p>
+      DevHitch groups meet locally, in person and online. We'll connect you with
+      people in your area, and more can join you online.
+    </p>
+    <br />
+    <h5>
+      Horana,LK
+      <button class="btn btn-outline-secondary btn-sm">Change Location</button>
+    </h5>
+
+    <hr />
+
+    <h3 class="mt-3">Choose few topics that's describe your interest</h3>
+    <div class="mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        aria-describedby="name"
+        value="Software Engineering"
+      />
+
+      <div class="container" *ngFor="let topic of topics">
+        <span class="badge rounded-pill bg-primary" style="float: left;">{{
+          topic?.name
+        }}</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -12,9 +12,40 @@
   border-radius: 15px;
   border-color: grey;
   margin: 0 auto;
+  /* box-shadow: 0 15px 15px 0 grey; */
 }
 
 .center {
   text-align: center;
   padding-top: 5%;
 }
+
+/* .box {
+  position: relative;
+  /* width: 70%; */
+  /* height: 185px; */
+  /* background: #fff; */
+  /* margin: 40px auto; */
+/* } */
+/* .shadow3 {
+  position: relative;
+}
+.shadow3:before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #555;
+  -webkit-box-shadow: 0 15px 10px #555;
+  -moz-box-shadow: 0 15px 10px #555;
+  box-shadow: 0 15px 10px #555;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}  */

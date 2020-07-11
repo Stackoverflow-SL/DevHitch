@@ -10,6 +10,10 @@ import { EventPreviewComponent } from './components/common/event-preview/event-p
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { NewGroupComponent } from './components/new-group/new-group.component';
+import { GroupsComponent } from './components/groups/groups.component';
+import { EventsComponent } from './components/events/events.component';
+import { GroupItemComponent } from './components/common/group-item/group-item.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +25,10 @@ import { ProfileComponent } from './components/profile/profile.component';
     LoginComponent,
     SignupComponent,
     ProfileComponent,
+    NewGroupComponent,
+    GroupsComponent,
+    EventsComponent,
+    GroupItemComponent,
   ],
   imports: [
     BrowserModule,
