@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { User } from '../../models/user.model';
+import {Component, OnInit} from '@angular/core';
+import {User} from '../../models/user.model';
 
 @Component({
   selector: 'app-profile',
@@ -12,14 +12,17 @@ export class ProfileComponent implements OnInit {
   constructor() {
     this.user = new User(
       'U001',
-      'Chamod Perera',
+      'Chamod',
+      'Perera',
       'hcsperera@gmail.com',
+      '',
       'https://avatars1.githubusercontent.com/u/19349315?s=460&u=0c5e235d9529fccdbfb37a31ed69655a6cd8dbb0&v=4',
       'Horana',
-      null,
+      [],
       'GCE'
     );
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 }

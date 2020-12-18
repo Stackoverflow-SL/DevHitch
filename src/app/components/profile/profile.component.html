@@ -11,13 +11,13 @@
         <div class="col-3">
           <div class="container profile-container center">
             <img
-              src="{{ user.image }}"
-              width="150px"
               height="150px"
+              src="{{ user.image }}"
               style="border-radius: 50%;"
+              width="150px"
             />
 
-            <h6 class="mt-2">{{ user.name }}</h6>
+            <h6 class="mt-2">{{ user.firstName + " " + user.lastName }}</h6>
             <p>Platformer</p>
           </div>
         </div>
@@ -28,26 +28,26 @@
               <div class="row">
                 <div class="col-sm">
                   <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
+                    <label class="form-label" for="name">Name</label>
                     <input
-                      type="text"
+                      aria-describedby="emailHelp"
                       class="form-control"
                       id="name"
-                      aria-describedby="emailHelp"
-                      value="{{ user.name }}"
+                      type="text"
+                      value="{{ user.firstName }}"
                     />
                   </div>
                 </div>
                 <div class="col-sm">
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"
-                      >Email address</label
+                    <label class="form-label" for="exampleInputEmail1"
+                    >Email address</label
                     >
                     <input
-                      type="email"
+                      aria-describedby="emailHelp"
                       class="form-control"
                       id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
+                      type="email"
                       value="{{ user.email }}"
                     />
                   </div>
@@ -56,20 +56,20 @@
                 <div class="row">
                   <div class="col-sm">
                     <div class="mb-3">
-                      <label for="location" class="form-label">Location</label>
+                      <label class="form-label" for="location">Location</label>
                       <input
-                        type="text"
+                        aria-describedby="location"
                         class="form-control"
                         id="location"
-                        aria-describedby="location"
-                        value="{{ user.name }}"
+                        type="text"
+                        value="{{ user.firstName + ' ' + user.lastName }}"
                       />
                     </div>
                   </div>
 
                   <div class="col-sm">
                     <div class="mb-3">
-                      <label for="bio" class="form-label">Bio</label>
+                      <label class="form-label" for="bio">Bio</label>
                       <textarea
                         class="form-control"
                         id="bio"
@@ -82,7 +82,7 @@
               </div>
 
               <button class="btn btn-primary">Update Profile</button>
-              <hr />
+              <hr/>
               <button class="btn btn-secondary ml-2">Change Password</button>
               <button class="btn btn-danger ml-2">Delete Account</button>
             </form>
