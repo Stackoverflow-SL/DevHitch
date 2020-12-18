@@ -14,6 +14,7 @@ import { NewGroupComponent } from './components/new-group/new-group.component';
 import { GroupsComponent } from './components/groups/groups.component';
 import { EventsComponent } from './components/events/events.component';
 import { GroupItemComponent } from './components/common/group-item/group-item.component';
+import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -30,11 +31,8 @@ import { GroupItemComponent } from './components/common/group-item/group-item.co
     EventsComponent,
     GroupItemComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, StoreModule.forRoot({}, {})],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
