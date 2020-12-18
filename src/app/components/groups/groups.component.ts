@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Group } from 'src/app/models/group.model';
+import {Component, OnInit} from '@angular/core';
+import {Group} from 'src/app/models/group.model';
 
 @Component({
   selector: 'app-groups',
@@ -7,7 +7,7 @@ import { Group } from 'src/app/models/group.model';
   styleUrls: ['./groups.component.css'],
 })
 export class GroupsComponent implements OnInit {
-  isMyGroupsAvailable: Boolean;
+  isMyGroupsAvailable: boolean;
   groups: Group[];
 
   constructor() {
@@ -18,34 +18,45 @@ export class GroupsComponent implements OnInit {
         '1',
         'Golang Sri Lanka',
         'Colombo,SL',
+        '',
+        [],
         'https://www.thedigitaltransformationpeople.com/wp-content/uploads/2019/03/tech-conference-networking-tips-640x400-c-default.jpg'
       ),
       new Group(
         '1',
         'Golang Sri Lanka',
         'Colombo,SL',
+        '',
+        [],
         'https://www.thedigitaltransformationpeople.com/wp-content/uploads/2019/03/tech-conference-networking-tips-640x400-c-default.jpg'
       ),
       new Group(
         '1',
         'Golang Sri Lanka',
         'Colombo,SL',
+        '',
+        [],
         'https://www.thedigitaltransformationpeople.com/wp-content/uploads/2019/03/tech-conference-networking-tips-640x400-c-default.jpg'
       ),
       new Group(
         '1',
         'Golang Sri Lanka',
         'Colombo,SL',
+        '',
+        [],
         'https://www.thedigitaltransformationpeople.com/wp-content/uploads/2019/03/tech-conference-networking-tips-640x400-c-default.jpg'
       ),
       new Group(
         '1',
         'Golang Sri Lanka',
         'Colombo,SL',
+        '',
+        [],
         'https://www.thedigitaltransformationpeople.com/wp-content/uploads/2019/03/tech-conference-networking-tips-640x400-c-default.jpg'
       ),
     ];
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 }

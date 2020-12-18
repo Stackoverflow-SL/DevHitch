@@ -1,13 +1,18 @@
 export class Group {
-  id: String;
-  name: String;
-  location: String;
-  image: String;
+  id: string;
+  name: string;
+  location: string;
+  organizer: string;
+  coOrganizers: string[];
+  image: string;
 
-  constructor(id: String, name: String, location: String, image: String) {
+
+  constructor(id: string, name: string, location: string, organizer: string, coOrganizers: string[], image: string) {
     this.id = id;
     this.name = name;
     this.location = location;
+    this.organizer = organizer;
+    this.coOrganizers = coOrganizers;
     this.image = image;
   }
 }

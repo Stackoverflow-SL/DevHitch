@@ -1,25 +1,20 @@
-import { Group } from './group.model';
 export class User {
-  id: String;
-  name: String;
-  email: String;
-  image: String;
-  location: String;
-  joinedGroups: Group[];
-  bio: String;
+  id: string;
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+  image: string;
+  location: string;
+  joinedGroups: string[];
+  bio: string;
 
-  constructor(
-    id: String,
-    name: String,
-    email: String,
-    image: String,
-    location: String,
-    joinedGroups: Group[],
-    bio: String
-  ) {
+  constructor(id: string, firstName: string, lastName: string, email: string, password: string, image: string, location: string, joinedGroups: string[], bio: string) {
     this.id = id;
-    this.name = name;
+    this.firstName = firstName;
+    this.lastName = lastName;
     this.email = email;
+    this.password = password;
     this.image = image;
     this.location = location;
     this.joinedGroups = joinedGroups;

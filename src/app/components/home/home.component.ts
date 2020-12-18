@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Event } from '../../models/event.model';
+import {Component, OnInit} from '@angular/core';
+import {Event} from '../../models/event.model';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +7,8 @@ import { Event } from '../../models/event.model';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  tempEvents: Event[];
+
   constructor() {
     this.tempEvents = [
       new Event(
@@ -15,7 +17,7 @@ export class HomeComponent implements OnInit {
         'Mon, Jun 29, 4:50 PM',
         'https://secure-content.meetupstatic.com/images/classic-events/491000108/375x210.jpg',
         'GoLang Sri Lanka Community',
-        12,
+        [],
         'Online'
       ),
       new Event(
@@ -24,7 +26,7 @@ export class HomeComponent implements OnInit {
         'Tue, Jun 30, 5:00 PM',
         'https://secure-content.meetupstatic.com/images/classic-events/491024724/500x280.jpg',
         'Sri Lankan Power BI Community',
-        30,
+        [],
         'Online'
       ),
 
@@ -34,7 +36,7 @@ export class HomeComponent implements OnInit {
         'Tue, Jun 30, 5:00 PM',
         'https://secure-content.meetupstatic.com/images/classic-events/490906389/500x280.jpg',
         'Colombo Flutter Community',
-        19,
+        [],
         'Online'
       ),
       new Event(
@@ -43,13 +45,13 @@ export class HomeComponent implements OnInit {
         'Tue, Jun 30, 5:00 PM',
         'https://secure-content.meetupstatic.com/images/classic-events/490705895/500x280.jpg',
         'Colombo React Native Meetup Group',
-        39,
+        [],
         'Online'
       ),
     ];
   }
 
-  tempEvents: Event[];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 }
