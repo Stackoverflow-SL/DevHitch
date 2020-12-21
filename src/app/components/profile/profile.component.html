@@ -23,7 +23,7 @@
         </div>
         <div class="col-7">
           <div class="container profile-container">
-            <form style="padding-top: 5%;">
+            <form style="padding-top: 5%;" [formGroup]="profileForm" (ngSubmit)="profileFormHandler()">
               <h4>Profile</h4>
               <div class="row">
                 <div class="col-sm">
