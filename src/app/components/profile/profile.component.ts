@@ -40,7 +40,7 @@ export class ProfileComponent implements OnInit {
    * Fetches user data for the profile template
    */
   public fetchUserProfileData() {
-    this.profileService.getProfileData().subscribe((userData) => {
+    this.profileService.getProfileData('U001').subscribe((userData) => {
       if (userData) {
         this.user = userData;
         this.profileForm.patchValue({
@@ -83,7 +83,7 @@ export class ProfileComponent implements OnInit {
    * TODO : Handles account delete event.
    */
   public deleteAccountHandler() {
-    this.profileService.deleteAccount().subscribe((response) => {
+    this.profileService.deleteAccount('U001').subscribe((response) => {
 
     }, error => {
       console.log('error occurred while deleting user account')

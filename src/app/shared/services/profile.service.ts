@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable } from 'rxjs';
 import { User } from 'src/app/models/user.model';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -9,13 +10,20 @@ import { User } from 'src/app/models/user.model';
 export class ProfileService {
   public baseUrl: string;
   public apiPath: string;
-  constructor(private http: HttpClient) { }
+  public fullUrl: string;
+  constructor(private http: HttpClient) {
+    this.baseUrl = environment.baseUrl;
+    this.apiPath = environment.userApiPath;
+    this.fullUrl = `${this.baseUrl}/${this.apiPath}`;
+    console.log(this.fullUrl);
+  }
 
 
   /**
    * Returns user object
    */
-  public getProfileData(): Observable<User> {
+  public getProfileData(id: string): Observable<User> {
+    const url = `${this.fullUrl}/${id}`;
     return Observable.create((observer: any) => {
       setTimeout(() => {
         observer.next(userObject);
@@ -27,6 +35,7 @@ export class ProfileService {
    * Updates users object
    */
   public updateProfileData(user: User): Observable<User> {
+    const url = `${this.fullUrl}/update`;
     return Observable.create((observer: any) => {
       setTimeout(() => {
         observer.next(true);
@@ -37,7 +46,8 @@ export class ProfileService {
   /**
  * Delete user account
  */
-  public deleteAccount(): Observable<User> {
+  public deleteAccount(id: string): Observable<User> {
+    const url = `${this.fullUrl}/delete/${id}`;
     return Observable.create((observer: any) => {
       setTimeout(() => {
         observer.next(true);
@@ -49,6 +59,18 @@ export class ProfileService {
 * Updates user password
 */
   public updatePassword(): Observable<any> {
+    return Observable.create((observer: any) => {
+      setTimeout(() => {
+        observer.next(true);
+      }, 1000);
+    });
+  }
+
+  /**
+* Get users list
+*/
+  public getAllProfiles(): Observable<any> {
+    const url = `${this.fullUrl}/list`;
     return Observable.create((observer: any) => {
       setTimeout(() => {
         observer.next(true);
