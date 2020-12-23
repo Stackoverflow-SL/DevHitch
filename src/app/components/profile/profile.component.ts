@@ -58,7 +58,7 @@ export class ProfileComponent implements OnInit {
   /**
    *TODO : Submit profile update
    */
-  public profileFormHandler() {
+  public updateProfile() {
     let user = this.profileForm.value;
     this.profileService.updateProfileData(user).subscribe((response) => {
 
@@ -71,7 +71,7 @@ export class ProfileComponent implements OnInit {
   /**
    * TODO : Handles password change event
    */
-  public changePasswordHandler() {
+  public changePassword() {
     this.profileService.updatePassword().subscribe((response) => {
 
     }, error => {
@@ -82,7 +82,7 @@ export class ProfileComponent implements OnInit {
   /**
    * TODO : Handles account delete event.
    */
-  public deleteAccountHandler() {
+  public deleteAccount() {
     this.profileService.deleteAccount('U001').subscribe((response) => {
 
     }, error => {
