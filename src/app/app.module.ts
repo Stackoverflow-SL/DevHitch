@@ -14,6 +14,8 @@ import { NewGroupComponent } from './components/new-group/new-group.component';
 import { GroupsComponent } from './components/groups/groups.component';
 import { EventsComponent } from './components/events/events.component';
 import { GroupItemComponent } from './components/common/group-item/group-item.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { GroupItemComponent } from './components/common/group-item/group-item.co
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
