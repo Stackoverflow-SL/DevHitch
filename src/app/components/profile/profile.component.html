@@ -1,55 +1,35 @@
 <div>
-  <div
-    class="profile-cover"
-    style="
+  <div class="profile-cover" style="
       background-image: url(https://about.twitter.com/content/dam/about-twitter/company/brand-resources/en_us/OTB_Company_Blue.png.img.fullhd.medium.png);
-    "
-  >
+    ">
     <div class="container profile-section">
       <div class="row">
         <div class="col-2"></div>
         <div class="col-3">
           <div class="container profile-container center">
-            <img
-              height="150px"
-              src="{{ user.image }}"
-              style="border-radius: 50%;"
-              width="150px"
-            />
+            <img height="150px" src="{{ user ? user.image:'' }}" style="border-radius: 50%;" width="150px" />
 
-            <h6 class="mt-2">{{ user.firstName + " " + user.lastName }}</h6>
+            <h6 class="mt-2">{{user ? user.firstName + user.lastName :''}}</h6>
             <p>Platformer</p>
           </div>
         </div>
         <div class="col-7">
           <div class="container profile-container">
-            <form style="padding-top: 5%;">
+            <form style="padding-top: 5%;" [formGroup]="profileForm" (ngSubmit)="updateProfile()">
               <h4>Profile</h4>
               <div class="row">
                 <div class="col-sm">
                   <div class="mb-3">
                     <label class="form-label" for="name">Name</label>
-                    <input
-                      aria-describedby="emailHelp"
-                      class="form-control"
-                      id="name"
-                      type="text"
-                      value="{{ user.firstName }}"
-                    />
+                    <input aria-describedby="emailHelp" class="form-control" id="name" type="text"
+                      formControlName="name" />
                   </div>
                 </div>
                 <div class="col-sm">
                   <div class="mb-3">
-                    <label class="form-label" for="exampleInputEmail1"
-                    >Email address</label
-                    >
-                    <input
-                      aria-describedby="emailHelp"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      type="email"
-                      value="{{ user.email }}"
-                    />
+                    <label class="form-label" for="exampleInputEmail1">Email address</label>
+                    <input formControlName="email" aria-describedby="emailHelp" class="form-control"
+                      id="exampleInputEmail1" type="email" />
                   </div>
                 </div>
 
@@ -57,35 +37,25 @@
                   <div class="col-sm">
                     <div class="mb-3">
                       <label class="form-label" for="location">Location</label>
-                      <input
-                        aria-describedby="location"
-                        class="form-control"
-                        id="location"
-                        type="text"
-                        value="{{ user.firstName + ' ' + user.lastName }}"
-                      />
+                      <input aria-describedby="location" class="form-control" id="location" type="text"
+                        formControlName="location" />
                     </div>
                   </div>
 
                   <div class="col-sm">
                     <div class="mb-3">
                       <label class="form-label" for="bio">Bio</label>
-                      <textarea
-                        class="form-control"
-                        id="bio"
-                        rows="3"
-                        value="{{ user.bio }}"
-                      ></textarea>
+                      <textarea formControlName="bio" class="form-control" id="bio" rows="3"></textarea>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <button class="btn btn-primary">Update Profile</button>
-              <hr/>
-              <button class="btn btn-secondary ml-2">Change Password</button>
-              <button class="btn btn-danger ml-2">Delete Account</button>
+              <button type="submit" [disabled]="profileForm.invalid" class="btn btn-primary">Update Profile</button>
+              <hr />
             </form>
+            <button (click)="changePassword()" class="btn btn-secondary ml-2">Change Password</button>
+            <button (click)="deleteAccount()" class="btn btn-danger ml-2">Delete Account</button>
           </div>
         </div>
       </div>
