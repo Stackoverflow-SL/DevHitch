@@ -14,6 +14,7 @@ import { NewGroupComponent } from './components/new-group/new-group.component';
 import { GroupsComponent } from './components/groups/groups.component';
 import { EventsComponent } from './components/events/events.component';
 import { GroupItemComponent } from './components/common/group-item/group-item.component';
+import { StoreModule } from '@ngrx/store';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -37,8 +38,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

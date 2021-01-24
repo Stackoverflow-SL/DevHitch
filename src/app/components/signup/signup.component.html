@@ -1,30 +1,47 @@
 <div class="row" style="height: 80vh;">
   <div class="col-7">
-    <img class="heading-vector w-100" src="../../../assets/images/signin.png" alt="Sign Up to DevHitch" />
+    <img
+      class="heading-vector w-100"
+      src="../../../assets/images/signin.png"
+      alt="Sign Up to DevHitch"
+    />
   </div>
   <div class="col-5">
-    <form class="login-form" [formGroup]="signUpForm" (ngSubmit)="signUpFormHandler()">
+    <form class="login-form">
       <div class="form-title">
         <h3>Signup to DevHitch</h3>
       </div>
       <div class="mb-3">
         <label for="name" class="form-label">Name</label>
-        <input formControlName="name" type="text" class="form-control" id="name" aria-describedby="name" />
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          aria-describedby="name"
+        />
       </div>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
-          aria-describedby="emailHelp" />
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
         <div id="emailHelp" class="form-text">
           We'll never share your email with anyone else.
         </div>
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" maxlength="12"
-          minlength="8" />
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
       </div>
-      <button type="submit" [disabled]="signUpForm.invalid" class="btn btn-primary">Submit</button>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 
     <hr />
