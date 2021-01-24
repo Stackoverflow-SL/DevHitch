@@ -37,7 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
     StoreModule.forRoot({}, {})
   ],
   providers: [],
