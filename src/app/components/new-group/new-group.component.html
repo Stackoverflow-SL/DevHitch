@@ -22,7 +22,7 @@
         class="form-control"
         id="name"
         type="text"
-        value="Software Engineering"
+        value="{{ getInterestedTopic() }}"
       />
 
       <div *ngFor="let topic of topics" class="container">
@@ -30,6 +30,16 @@
           topic?.name
         }}</span>
       </div>
+    </div>
+    <br />
+    <div class="mb-3">
+      <input
+        aria-describedby="name"
+        class="form-control"
+        name="groupName"
+        placeholder="Group Name"
+        type="text"
+      />
     </div>
   </div>
 </div>

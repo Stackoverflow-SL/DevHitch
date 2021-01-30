@@ -25,4 +25,8 @@ export class NewGroupComponent implements OnInit {
   getCurrentLocation(): string {
     return 'Horana, Sri Lanka';
   }
+
+  getInterestedTopic(): string {
+    return 'Software Engineering';
+  }
 }
