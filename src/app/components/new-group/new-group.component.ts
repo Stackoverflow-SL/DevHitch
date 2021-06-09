@@ -16,9 +16,17 @@ export class NewGroupComponent implements OnInit {
       new Topic('3', 'Software Engineering'),
       new Topic('4', 'Beginner'),
       new Topic('5', 'IT'),
-      new Topic('6', 'Computer Science')
+      new Topic('6', 'Computer Science'),
     ];
   }
 
   ngOnInit(): void {}
+
+  getCurrentLocation(): string {
+    return 'Horana, Sri Lanka';
+  }
+
+  getInterestedTopic(): string {
+    return 'Software Engineering';
+  }
 }
